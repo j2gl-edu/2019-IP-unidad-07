@@ -55,25 +55,26 @@ public class Ejercicio03 {
     
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        // System.out.print("Ingrese la fecha en formato: DIA, MES, AÑO: ");
-        // String data = reader.nextLine();
+        System.out.print("Ingrese la fecha en formato: DIA, MES, AÑO: ");
+        String data = reader.nextLine();
 
-        // String s[] = data.split(",");
-        // int day = Integer.valueOf(s[0]);
-        // int month = Integer.valueOf(s[1]);
-        // int year = Integer.valueOf(s[2]);
+        String s[] = data.split(",");
+        int day = Integer.valueOf(s[0]);
+        int month = Integer.valueOf(s[1]);
+        int year = Integer.valueOf(s[2]);
 
         Ejercicio03 ejercicio03 = new Ejercicio03();
-        // ejercicio03.calcularSiguienteFecha(day, month, year);
+        String followingDay = ejercicio03.nextDate(day, month, year);
+        System.out.println("El siguiente día será: " + followingDay);
         
-        System.out.println();
-        System.out.println(ejercicio03.nextDate(1, 1, 2019));
-        System.out.println(ejercicio03.nextDate(31, 1, 2019));
-        System.out.println(ejercicio03.nextDate(28, 2, 2019));
-        System.out.println(ejercicio03.nextDate(31, 12, 2019));
-        System.out.println(ejercicio03.nextDate(28, 2, 2000));
-        System.out.println(ejercicio03.nextDate(28, 2, 2020));
-        System.out.println(ejercicio03.nextDate(28, 2, 2019));
+        // System.out.println();
+        // System.out.println(ejercicio03.nextDate(1, 1, 2019));
+        // System.out.println(ejercicio03.nextDate(31, 1, 2019));
+        // System.out.println(ejercicio03.nextDate(28, 2, 2019));
+        // System.out.println(ejercicio03.nextDate(31, 12, 2019));
+        // System.out.println(ejercicio03.nextDate(28, 2, 2000));
+        // System.out.println(ejercicio03.nextDate(28, 2, 2020));
+        // System.out.println(ejercicio03.nextDate(28, 2, 2019));
 
         reader.close();        
     }
