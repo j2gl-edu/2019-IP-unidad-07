@@ -1,4 +1,4 @@
-package edu.unit07;
+package edu.unit07.util;
 
 public class LeapYear { 
 
@@ -15,10 +15,6 @@ public class LeapYear {
             }
         }
         return leap;
-    }
-
-    public static void main(String[] args) {
-        
     }
 
 }

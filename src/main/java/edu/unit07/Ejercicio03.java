@@ -2,6 +2,8 @@ package edu.unit07;
 
 import java.util.Scanner;
 
+import edu.unit07.util.LeapYear;
+
 // Determine a partir de una fecha introducida por el teclado con el formato DÍA, MES, AÑO, 
 // cual el la fecha del día siguiente.
 public class Ejercicio03 {
@@ -72,7 +74,7 @@ public class Ejercicio03 {
         System.out.println(ejercicio03.nextDate(28, 2, 2000));
         System.out.println(ejercicio03.nextDate(28, 2, 2020));
         System.out.println(ejercicio03.nextDate(28, 2, 2019));
-        
+
         reader.close();        
     }
 }
